@@ -1,6 +1,6 @@
 import { NavLink, Outlet, ScrollRestoration } from 'react-router-dom';
 
-export default function Dashboard() {
+const Dashboard = () => {
 
   return (
     <div className="root-layout">
@@ -19,3 +19,6 @@ export default function Dashboard() {
     </div>
   );
 }
+
+
+export default Dashboard

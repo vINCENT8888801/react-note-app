@@ -1,4 +1,3 @@
-import { Breadcrumbs } from "@mui/material"
 import { Outlet, NavLink, ScrollRestoration } from "react-router-dom"
 
 const DeconstructuringPage = () => {
@@ -12,7 +11,6 @@ const DeconstructuringPage = () => {
           <NavLink to="javascript">Javascript</NavLink>
           <NavLink to="react">React</NavLink>
         </nav>
-        <Breadcrumbs />
       </header>
       <main>
         <Outlet />

@@ -1,4 +1,3 @@
-import { Breadcrumbs } from "@mui/material"
 import { Outlet, NavLink, ScrollRestoration } from "react-router-dom"
 
 const VariablePage = () => {
@@ -13,7 +12,6 @@ const VariablePage = () => {
             <NavLink to="javascript">Javascript</NavLink>
             <NavLink to="react">React</NavLink>
             </nav>
-            <Breadcrumbs />
         </header>
         <main>
             <Outlet />

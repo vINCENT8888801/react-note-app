@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom"
 import { Outlet } from "react-router-dom"
 
-export default function JavascriptLayout() {
+const JavascriptLayout = () => {
   return (
     <div className="careers-layout">
       <h2>JavaScript</h2>
@@ -13,3 +13,5 @@ export default function JavascriptLayout() {
     </div>
   )
 }
+
+export default JavascriptLayout;
