@@ -6,7 +6,8 @@ import JavascriptLayout from './layout/JavaScriptLayout';
 import VariablePage from './pages/javascript/VariablePage';
 import ClosurePage from './pages/javascript/ClosurePage';
 import HomePage from './pages/HomePage';
-import DeconstructuringPage from './pages/javascript/DestructuringPage';
+import DestructuringPage from './pages/javascript/DestructuringPage';
+import SpreadOperatorPage from './pages/javascript/SpreadOperator';
 
 
 const router = createBrowserRouter(
@@ -16,7 +17,8 @@ const router = createBrowserRouter(
       <Route path="javascript" element={<JavascriptLayout />}>
         <Route path="variable" element={<VariablePage />} />
         <Route path="closure" element={<ClosurePage />} />
-        <Route path="deconstructuring" element={<DeconstructuringPage />} />
+        <Route path="destructuring" element={<DestructuringPage />} />
+        <Route path="spreadOperator" element={<SpreadOperatorPage />} />
       </Route>
       <Route path="*" element={<NotFound />} />
     </Route>

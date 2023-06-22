@@ -1,18 +1,24 @@
 import { Outlet, NavLink, ScrollRestoration } from "react-router-dom"
 
-const VariablePage = () => {
+const SpreadOperatorPage = () => {
   return (
     <>
-        {/* <div className="root-layout">
+        <div className="root-layout">
         <ScrollRestoration />
+        <header>
+            <nav>
             <h1>React Onboarding Note</h1>
             <NavLink to="/">Home</NavLink>
             <NavLink to="javascript">Javascript</NavLink>
             <NavLink to="react">React</NavLink>
+            </nav>
+        </header>
+        <main>
             <Outlet />
-        </div> */}
+        </main>
+        </div>
     </>
   )
 }
 
-export default VariablePage;
+export default SpreadOperatorPage;

@@ -1,6 +1,6 @@
 import { Outlet, NavLink, ScrollRestoration } from "react-router-dom"
 
-const DeconstructuringPage = () => {
+const DestructuringPage = () => {
   return (
     <div className="root-layout">
       <ScrollRestoration />
@@ -19,4 +19,4 @@ const DeconstructuringPage = () => {
   )
 }
 
-export default DeconstructuringPage
+export default DestructuringPage

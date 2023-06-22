@@ -1,16 +1,30 @@
 import { NavLink } from "react-router-dom"
 import { Outlet } from "react-router-dom"
+import SideBar from "../components/SideBar";
+import AppBarLinkModel from "../model/components/AppBarLinkModel.type";
+
+const javaScriptPage: AppBarLinkModel[] = [{
+  title: "Variable",
+  link: "variable"
+}, {
+  title: "Closure",
+  link: "closure"
+}, {
+  title: "Destructuring",
+  link: "destructuring"
+}, {
+  title: "SpreadOperator",
+  link: "spreadOperator"
+}];
 
 const JavascriptLayout = () => {
   return (
-    <div className="careers-layout">
-      <h2>JavaScript</h2>
-        <NavLink to="variable">Variable</NavLink>
-        <NavLink to="closure">Closure</NavLink>
-        <NavLink to="destructuring">Destructuring</NavLink>
-        <NavLink to="spreadOperator">SpreadOperator</NavLink>
-      <Outlet />
+    <>
+    <SideBar topics={javaScriptPage}/>
+    <div className="flex-wrap">
+      <Outlet/>
     </div>
+    </>
   )
 }
 
