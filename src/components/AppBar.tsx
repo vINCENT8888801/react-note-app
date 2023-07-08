@@ -18,8 +18,8 @@ const links: AppBarLinkModel[] = [{
 const MyAppBar = () => {
     return (
         <>
-            <nav className="bg-white h-1/6 border-gray-200 dark:bg-gray-900">
-                <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <div className="bg-white h-20  border-gray-200 dark:bg-gray-900">
+                <div className="flex flex-wrap items-center justify-between mx-auto p-4">
                     <NavLink className="flex items-center" to="/">
                         <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">React App Note</span>
                     </NavLink>
@@ -32,7 +32,7 @@ const MyAppBar = () => {
                         </ul>
                     </div>
                 </div>
-            </nav>
+            </div>
         </>
     );
 }

@@ -1,5 +1,4 @@
-import { NavLink } from "react-router-dom"
-import { Outlet } from "react-router-dom"
+import { Outlet } from "react-router-dom";
 import SideBar from "../components/SideBar";
 import AppBarLinkModel from "../model/components/AppBarLinkModel.type";
 
@@ -20,10 +19,10 @@ const javaScriptPage: AppBarLinkModel[] = [{
 const JavascriptLayout = () => {
   return (
     <>
-    <SideBar topics={javaScriptPage}/>
-    <div className="flex-wrap">
-      <Outlet/>
-    </div>
+      <SideBar topics={javaScriptPage} />
+      <div className="flex-auto">
+        <Outlet />
+      </div>
     </>
   )
 }
