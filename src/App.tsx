@@ -8,9 +8,9 @@ import ClosurePage from './pages/javascript/ClosurePage';
 import HomePage from './pages/HomePage';
 import DestructuringPage from './pages/javascript/DestructuringPage';
 import SpreadOperatorPage from './pages/javascript/SpreadOperator';
-import { createContext,useContext } from 'react';
 import ReactLayout from './layout/ReactLayout';
 import HooksInfo from './pages/react/HooksInfo';
+import UseStateTopic from './pages/react/UseStateTopic';
 
 
 const router = createBrowserRouter(
@@ -25,7 +25,7 @@ const router = createBrowserRouter(
       </Route>
       <Route path="react" element={<ReactLayout />}>
         <Route path="hook" element={<HooksInfo />} />
-        <Route path="useState" element={<HooksInfo />} />
+        <Route path="useState" element={<UseStateTopic />} />
       </Route>
       <Route path="*" element={<NotFound />} />
     </Route>
