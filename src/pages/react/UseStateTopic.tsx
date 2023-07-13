@@ -1,5 +1,5 @@
-import NoteCodeBlock from "../../components/CodeBlock";
-import TopicHeader from "../../components/Header";
+import NoteCodeBlock from "../../components/NoteCodeBlock";
+import TopicHeader from "../../components/common/TopicHeader";
 import { useState } from "react";
 
 
@@ -30,7 +30,7 @@ const incrementFunc = () => {
 }`;
 
 const changeCarCode: string =
-`const [car, setCar] = useState(() => { return { make: "Toyota", model: "Camry" }; });
+  `const [car, setCar] = useState(() => { return { make: "Toyota", model: "Camry" }; });
 
 const changeCar = () => { setCar((prevCar) => { return { ...prevCar, model: "Accord" } }); }`
 

@@ -11,6 +11,11 @@ import SpreadOperatorPage from './pages/javascript/SpreadOperator';
 import ReactLayout from './layout/ReactLayout';
 import HooksInfo from './pages/react/HooksInfo';
 import UseStateTopic from './pages/react/UseStateTopic';
+import UseEffectTopic from './pages/react/UseEffectTopic';
+import UseRefTopic from './pages/react/UseRefTopic';
+import UseContextTopic from './pages/react/UseContextTopic';
+import { HeaderSizeProvider } from './hooks/HeaderSizeContext';
+
 
 
 const router = createBrowserRouter(
@@ -26,6 +31,9 @@ const router = createBrowserRouter(
       <Route path="react" element={<ReactLayout />}>
         <Route path="hook" element={<HooksInfo />} />
         <Route path="useState" element={<UseStateTopic />} />
+        <Route path="useEffect" element={<UseEffectTopic />} />
+        <Route path="useRef" element={<UseRefTopic />} />
+        <Route path="useContext" element={<UseContextTopic />} />
       </Route>
       <Route path="*" element={<NotFound />} />
     </Route>
@@ -35,7 +43,9 @@ const router = createBrowserRouter(
 const App = () => {
   return (
     <>
-      <RouterProvider router={router} />
+      <HeaderSizeProvider>
+        <RouterProvider router={router} />
+      </HeaderSizeProvider>
     </>
   );
 }

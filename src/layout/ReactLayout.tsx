@@ -8,7 +8,25 @@ const reactPage: AppBarLinkModel[] = [{
 }, {
     title: "useState",
     link: "useState"
-}, 
+}, {
+    title: "useEffect",
+    link: "useEffect"
+}, {
+    title: "useRef",
+    link: "useRef"
+}, {
+    title: "useContext",
+    link: "useContext"
+}, {
+    title: "useReducer",
+    link: "useReducer"
+}, {
+    title: "useCallback",
+    link: "useCallback"
+}, {
+    title: "useMemo",
+    link: "useMemo"
+}
 ];
 
 const ReactLayout = () => {

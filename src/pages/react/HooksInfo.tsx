@@ -1,5 +1,5 @@
-import NoteCodeBlock from "../../components/CodeBlock";
-import TopicHeader from "../../components/Header";
+import NoteCodeBlock from "../../components/NoteCodeBlock";
+import TopicHeader from "../../components/common/TopicHeader";
 
 
 const hookDontWorkOnClassComponentCode: string =
