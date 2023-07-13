@@ -39,7 +39,7 @@ const useContextTopic = () => {
             <p className="px-2">useContext is a hook that allow us to pass data through the component tree without having to pass props down manually at every level.</p>
             <p className="px-2">In this example, we will use useContext to toggle the header size.</p>
             <p className="px-2">Here we have a button that controls the header size of the App. If you move between component, you'll see the size of the header remains</p>
-            <div>
+            <div className="px-2">
                 <button className="rounded-full px-3 bg-blue-950 text-blue-50" onClick={toggleTheme}>Toggle header</button>
             </div>
             <br />
