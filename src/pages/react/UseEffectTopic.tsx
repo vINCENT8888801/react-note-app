@@ -3,9 +3,6 @@ import { useEffect, useState } from "react";
 
 
 const UseEffectTopic = () => {
-    // useEffect(() => {
-    //     console.log("useEffect called");
-    // });
 
     const getVal = () => {
         console.log("value intiialization called");
