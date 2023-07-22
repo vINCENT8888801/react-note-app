@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import AppBarLinkModel from "../model/components/AppBarLinkModel.type";
+import AppBarLinkModel from "../../model/components/AppBarLinkModel.type";
 
 
 

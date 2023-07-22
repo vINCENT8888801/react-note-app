@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
-import AppBarLinkModel from "../model/components/AppBarLinkModel.type";
+import AppBarLinkModel from "../../model/components/AppBarLinkModel.type";
 import AppBarLink from "./AppBarLink";
-import SideBarLinksProp from "../model/components/SideBarLinkProps.type";
+import SideBarLinksProp from "../../model/components/SideBarLinkProps.type";
 
 
 

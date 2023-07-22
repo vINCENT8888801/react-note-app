@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import SideBar from "../components/SideBar";
+import SideBar from "../components/nav/SideBar";
 import AppBarLinkModel from "../model/components/AppBarLinkModel.type";
 
 const javaScriptPage: AppBarLinkModel[] = [{

@@ -1,4 +1,4 @@
-import MyAppBar from "../components/AppBar";
+import MyAppBar from "../components/nav/AppBar";
 import { Outlet, ScrollRestoration } from "react-router-dom";
 
 
