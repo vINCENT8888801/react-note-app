@@ -1,4 +1,5 @@
 import NoteCodeBlock from "../../components/NoteCodeBlock";
+import Paragraph from "../../components/common/Paragraph";
 import TopicHeader from "../../components/common/TopicHeader";
 
 
@@ -27,10 +28,10 @@ const HooksInfo = () => {
     return (
         <div className="flex flex-auto flex-col">
             <TopicHeader title={"React Hooks"} />
-            <p className="px-2">What are React Hooks?</p>
-            <p className="px-2">React Hooks are functions that let us hook into the React state and lifecycle features from function components. React Hooks don't work inside classes.  </p>
+            <Paragraph>What are React Hooks?</Paragraph>
+            <Paragraph>React Hooks are functions that let us hook into the React state and lifecycle features from function components. React Hooks don't work inside classes.  </Paragraph>
             <NoteCodeBlock code={hookDontWorkOnClassComponentCode} />
-            <p className="px-2">Hooks also must be run on same order every time it render, so cannot be inside a conditional statement</p>
+            <Paragraph>Hooks also must be run on same order every time it render, so cannot be inside a conditional statement</Paragraph>
             <NoteCodeBlock code={conditionalHooksNotAllowedCode} />
         </div>
     );

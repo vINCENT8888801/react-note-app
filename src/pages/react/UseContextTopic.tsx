@@ -1,6 +1,7 @@
 import { useHeaderSizeUpdate } from "../../hooks/HeaderSizeContext";
 import TopicHeader from "../../components/common/TopicHeader";
 import NoteCodeBlock from "../../components/NoteCodeBlock";
+import Paragraph from "../../components/common/Paragraph";
 
 const useContextCode: string =
     `export const HeaderSizeContext = React.createContext(false);
@@ -36,17 +37,17 @@ const useContextTopic = () => {
     return (
         <div className="flex flex-auto flex-col">
             <TopicHeader title="useContext" />
-            <p className="px-2">useContext is a hook that allow us to pass data through the component tree without having to pass props down manually at every level.</p>
-            <p className="px-2">In this example, we will use useContext to toggle the header size.</p>
-            <p className="px-2">Here we have a button that controls the header size of the App. If you move between component, you'll see the size of the header remains</p>
+            <Paragraph>useContext is a hook that allow us to pass data through the component tree without having to pass props down manually at every level.</Paragraph>
+            <Paragraph>In this example, we will use useContext to toggle the header size.</Paragraph>
+            <Paragraph>Here we have a button that controls the header size of the App. If you move between component, you'll see the size of the header remains</Paragraph>
             <div className="px-2">
                 <button className="rounded-full px-3 bg-blue-950 text-blue-50" onClick={toggleTheme}>Toggle header</button>
             </div>
             <br />
-            <p className="px-2">First, we create a context with createContext</p>
-            <p className="px-2">Then, we create a provider to wrap the component that we want to use the context</p>
-            <p className="px-2">Then we want to wrap our App with HeaderSizeProvider</p>
-            <p className="px-2">Then, we export the whole thing as a custom hook to get the context value</p>
+            <Paragraph>First, we create a context with createContext</Paragraph>
+            <Paragraph>Then, we create a provider to wrap the component that we want to use the context</Paragraph>
+            <Paragraph>Then we want to wrap our App with HeaderSizeProvider</Paragraph>
+            <Paragraph>Then, we export the whole thing as a custom hook to get the context value</Paragraph>
             <NoteCodeBlock code={useContextCode} />
         </div>
 
