@@ -7,7 +7,7 @@ const Layout = () => {
     return (
         <>
             <ScrollRestoration></ScrollRestoration>
-            <div className="flex flex-col flex-auto w-screen h-screen">
+            <div className="flex flex-col min-h-screen">
                 <MyAppBar />
                 <main className="flex flex-grow h-full w-full">
                     <Outlet />
