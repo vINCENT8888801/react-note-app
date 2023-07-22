@@ -15,6 +15,7 @@ import UseEffectTopic from './pages/react/UseEffectTopic';
 import UseRefTopic from './pages/react/UseRefTopic';
 import UseContextTopic from './pages/react/UseContextTopic';
 import { HeaderSizeProvider } from './hooks/HeaderSizeContext';
+import UseReducerTopic from './pages/react/UseReducerTopic';
 
 
 
@@ -34,6 +35,7 @@ const router = createBrowserRouter(
         <Route path="useEffect" element={<UseEffectTopic />} />
         <Route path="useRef" element={<UseRefTopic />} />
         <Route path="useContext" element={<UseContextTopic />} />
+        <Route path="useReducer" element={<UseReducerTopic />} />
       </Route>
       <Route path="*" element={<NotFound />} />
     </Route>
