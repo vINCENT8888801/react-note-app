@@ -1,3 +1,4 @@
+import Paragraph from "../../components/common/Paragraph";
 import TopicHeader from "../../components/common/TopicHeader";
 import { useReducer, useState } from "react";
 
@@ -64,10 +65,10 @@ const UseReducerTopic = () => {
     return (
         <div>
             <TopicHeader title={"useReducer"} ></TopicHeader>
-            <div className="px-4 py-6"> The useReducer hook is used for state management in React. </div>
-            <div className="px-4 py-6"> It is an similar to useState hook. While useState allow you to get and set the State. useReducer allows you to do more</div>
-            <div className="px-4 py-6"> It used to handle more complex state. </div>
-            <div className="px-4 py-6"> The useReducer hook takes in a reducer function and an initial state. </div>
+            <Paragraph> The useReducer hook is used for state management in React. </Paragraph>
+            <Paragraph> It is an similar to useState hook. While useState allow you to get and set the State. useReducer allows you to do more</Paragraph>
+            <Paragraph> It used to handle more complex state. </Paragraph>
+            <Paragraph> The useReducer hook takes in a reducer function and an initial state. </Paragraph>
             <div className="px-4 py-6">
                 <input value={inputVal} onChange={e => setInputVal(e.target.value)} className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" />
             </div>
